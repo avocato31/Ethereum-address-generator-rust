@@ -51,7 +51,7 @@ fn create_address() -> Result<()> {
 
     // Filtering part...
     let address_string = format!("{:?}", pub_address);
-    if address_string.starts_with("0x123456") {
+    if address_string.starts_with("0x00000") {
         let json_data = json!({
             "secret_key": format!("{:?}", secret_key),
             "public_key": format!("{:?}", pub_key),
